@@ -1,0 +1,8 @@
+{
+  "model_name": "google/flan-t5-base",
+  "max_input_length": 512,
+  "max_output_length": 512,
+  "data_folder": "receipt_training_data",
+  "total_raw_examples": 90,
+  "total_processed_examples": 82
+}

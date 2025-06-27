@@ -1,0 +1,22 @@
+{
+  "total_examples": 90,
+  "avg_input_length": 325,
+  "avg_output_length": 277,
+  "max_input_length": 564,
+  "max_output_length": 815,
+  "field_coverage": {
+    "customer_name": 0.9444444444444444,
+    "date": 1.0,
+    "time": 1.0,
+    "check_number": 0.9888888888888889,
+    "table_number": 0.9666666666666667,
+    "pickup_time": 0.06666666666666667
+  },
+  "item_stats": {
+    "total_items": 272,
+    "avg_items_per_receipt": 3.022222222222222,
+    "avg_modifiers_per_item": 1.5514705882352942,
+    "seat_numbers_used": true,
+    "unique_seat_numbers": 9
+  }
+}
