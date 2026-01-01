@@ -1,4 +1,4 @@
-#Overview
+# Overview
 
 The main pipeline involves first using the preprocessing folder to convert the Wireshark data text files into chunks of receipts to be processed. Next we move into the finetuning 
 folder for the two main finetuning approaches. Approach 1 here did not seem very promising, which is why a data-distillation based method to generate ground truth from a larger
