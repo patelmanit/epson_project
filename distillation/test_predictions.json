@@ -1,0 +1,80 @@
+[
+  {
+    "file_id": "3",
+    "input": "Extract structured information from this restaurant receipt and return valid JSON.\n\nReceipt Text:\nDa...",
+    "expected": "{\"customer_name\":\"Reeper\",\"date\":\"06/03/25\",\"time\":\"11:13am\",\"check_number\":\"424325\",\"table_number\":\"14\",\"pickup_time\":\"N/A\",\"total_amount\":null,\"restaurant_name\":null,\"confidence_score\":0.5,\"order_items\":[{\"item_name\":\"Pint\",\"quantity\":1,\"modifiers\":[],\"price\":null},{\"item_name\":\"DOWNGRD C\",\"quantity\":1,\"modifiers\":[],\"price\":null}]}",
+    "predicted": "\"customer_name\":\"Reeper\",\"date\":\"06/03/25\",\"time\":\"11:13am\",\"check_number\":\"424325\",\"table_number\":\"14\",\"pickup_time\":\"N/A\",\"total_amount\":null,\"restaurant_name\":null,\"confidence_score\":0.8,\"order_items\":[\"item_name\":\"IC LITE\",\"quantity\":1,\"modifiers\":[\"Pint\"],\"price\":null,\"seat_number\":\"2\"]"
+  },
+  {
+    "file_id": "1",
+    "input": "Extract structured information from this restaurant receipt and return valid JSON.\n\nReceipt Text:\nDa...",
+    "expected": "{\"customer_name\":\"Chelsi!\",\"date\":\"06/03/25\",\"time\":\"10:55am\",\"check_number\":\"424323\",\"table_number\":\"\",\"pickup_time\":\"11:15am\",\"total_amount\":null,\"restaurant_name\":null,\"confidence_score\":0.8,\"order_items\":[{\"item_name\":\"Wings\",\"quantity\":10,\"modifiers\":[\"Hot\",\"Sloppy\"],\"price\":null,\"seat_number\":\"None\"},{\"item_name\":\"Wings\",\"quantity\":5,\"modifiers\":[\"Hot\",\"Sloppy\"],\"price\":null,\"seat_number\":\"None\"},{\"item_name\":\"\",\"quantity\":null,\"modifiers\":[\"DIANE\"],\"price\":null,\"seat_number\":\"None\"}]}",
+    "predicted": "\"customer_name\":\"Chelsi!\",\"date\":\"06/03/25\",\"time\":\"10:55am\",\"check_number\":\"424323\",\"table_number\":\"\",\"pickup_time\":\"11:15am\",\"total_amount\":null,\"restaurant_name\":null,\"confidence_score\":0.8,\"order_items\":[\"item_name\":\"Wings\",\"quantity\":1,\"modifiers\":[\"Hot\",\"Sloppy\"],\"price\":null,\"seat_number\":\"1\",\"item_name\":\"Wings\",\"quantity\":1,\"modifiers\":[\"Hot\",\"Sloppy\"],\"price\":null,\"seat_number\":\"1\"]"
+  },
+  {
+    "file_id": "20",
+    "input": "Extract structured information from this restaurant receipt and return valid JSON.\n\nReceipt Text:\niD...",
+    "expected": "{\"customer_name\":null,\"date\":\"06/03/25\",\"time\":\"11:35am\",\"check_number\":\"424333\",\"table_number\":null,\"pickup_time\":null,\"total_amount\":null,\"restaurant_name\":null,\"confidence_score\":0.8,\"order_items\":[]}",
+    "predicted": "\"customer_name\":\"N/A\",\"date\":\"06/03/25\",\"time\":\"11:35am\",\"check_number\":\"424333\",\"table_number\":\"h\",\"pickup_time\":\"N/A\",\"total_amount\":null,\"restaurant_name\":null,\"confidence_score\":0.8,\"order_items\":[\"item_name\":\"UUS10U DigiCert Inc\",\"quantity\":1,\"modifiers\":[\"U DigiCert TLS RSA SHA256 2020\"],\"price\":null,\"seat_number\":\"None\"]"
+  },
+  {
+    "file_id": "30",
+    "input": "Extract structured information from this restaurant receipt and return valid JSON.\n\nReceipt Text:\nDa...",
+    "expected": "{\"customer_name\":\"Aaliyah!\",\"date\":\"06/03/25\",\"time\":\"11:52am\",\"check_number\":\"424340\",\"table_number\":\"W-11\",\"pickup_time\":\"N/A\",\"total_amount\":null,\"restaurant_name\":null,\"confidence_score\":0.8,\"order_items\":[{\"item_name\":\"Soup Bowl\",\"quantity\":1,\"modifiers\":[\"**With Meal**\",\"CHX\"],\"price\":null,\"seat_number\":\"1\"},{\"item_name\":\"Chocolate Milk\",\"quantity\":2,\"modifiers\":[],\"price\":null,\"seat_number\":\"1\"},{\"item_name\":\"Pretzels\",\"quantity\":2,\"modifiers\":[],\"price\":null,\"seat_number\":\"1\"}]}",
+    "predicted": "\"customer_name\":\"Aaliyah!\",\"date\":\"06/03/25\",\"time\":\"11:52am\",\"check_number\":\"424340\",\"table_number\":\"W-11\",\"pickup_time\":\"N/A\",\"total_amount\":null,\"restaurant_name\":null,\"confidence_score\":0.8,\"order_items\":[\"item_name\":\"Soup Bowl\",\"quantity\":1,\"modifiers\":[\"**With Meal**\",\"CHX\"],\"price\":null,\"seat_number\":\"1\"]"
+  },
+  {
+    "file_id": "17",
+    "input": "Extract structured information from this restaurant receipt and return valid JSON.\n\nReceipt Text:\niD...",
+    "expected": "{\"customer_name\":\"Reeper\",\"date\":\"2025-06-25\",\"time\":\"11:35am\",\"check_number\":\"424328\",\"table_number\":\"13\",\"pickup_time\":\"N/A\",\"total_amount\":null,\"restaurant_name\":null,\"confidence_score\":0.8,\"order_items\":[{\"item_name\":\"Michelob Ultra\",\"quantity\":1,\"modifiers\":[],\"price\":null,\"seat_number\":\"1\"}]}",
+    "predicted": "\"customer_name\":\"Reeper\",\"date\":\"06/03/25\",\"time\":\"11:35am\",\"check_number\":\"424328\",\"table_number\":\"13\",\"pickup_time\":\"N/A\",\"total_amount\":null,\"restaurant_name\":null,\"confidence_score\":0.8,\"order_items\":[\"item_name\":\"Michelob Ultra\",\"quantity\":1,\"modifiers\":[],\"price\":null,\"seat_number\":\"1\"]"
+  },
+  {
+    "file_id": "28",
+    "input": "Extract structured information from this restaurant receipt and return valid JSON.\n\nReceipt Text:\nDa...",
+    "expected": "{\"customer_name\":\"Emily\",\"date\":\"06/03/25\",\"time\":\"11:50am\",\"check_number\":\"424335\",\"table_number\":\"B-10\",\"pickup_time\":\"N/A\",\"total_amount\":null,\"restaurant_name\":null,\"confidence_score\":0.8,\"order_items\":[{\"item_name\":\"Wing & Fries\",\"quantity\":2,\"modifiers\":[\"Slicker\",\"Honey Mustard\",\"Skinny Fry\"],\"price\":null,\"seat_number\":\"1\"},{\"item_name\":\"Lunch Special\",\"quantity\":1,\"modifiers\":[\"Home Fry\"],\"price\":null,\"seat_number\":\"1\"},{\"item_name\":\"BUSCH LIGHT\",\"quantity\":1,\"modifiers\":[],\"price\":null,\"seat_number\":\"1\"},{\"item_name\":\"Large Pitcher\",\"quantity\":1,\"modifiers\":[],\"price\":null,\"seat_number\":\"1\"}]}",
+    "predicted": "\"customer_name\":\"Emily\",\"date\":\"06/03/25\",\"time\":\"11:50am\",\"check_number\":\"424335\",\"table_number\":\"B-10\",\"pickup_time\":\"N/A\",\"total_amount\":null,\"restaurant_name\":null,\"confidence_score\":0.8,\"order_items\":[\"item_name\":\"Wing & Fries\",\"quantity\":1,\"modifiers\":[\"Slicker\",\"Cornelius\",\"HOME FRY\"],\"price\":null,\"seat_number\":\"1\",\"item_name\":\"Wing & Fries\",\"quantity\":1,\"modifiers\":[\"Honey Mustard\",\"Home FRY\"],\"price\":null,\"seat_number\":\"1\"]"
+  },
+  {
+    "file_id": "113",
+    "input": "Extract structured information from this restaurant receipt and return valid JSON.\n\nReceipt Text:\nDa...",
+    "expected": "{\"customer_name\":\"Reeper\",\"date\":\"03/25\",\"time\":\"02:18pm\",\"check_number\":\"424389\",\"table_number\":\"8\",\"pickup_time\":\"N/A\",\"total_amount\":null,\"restaurant_name\":null,\"confidence_score\":0.5,\"order_items\":[{\"item_name\":\"Chicken Platter\",\"quantity\":1,\"modifiers\":[\"Hot Parm\",\"Cole Slaw\",\"Skinny Fry\"],\"price\":null,\"seat_number\":\"1\"}]}",
+    "predicted": "\"customer_name\":\"Reeper\",\"date\":\"06/03/25\",\"time\":\"02:18pm\",\"check_number\":\"424389\",\"table_number\":\"8\",\"pickup_time\":\"N/A\",\"total_amount\":null,\"restaurant_name\":null,\"confidence_score\":0.8,\"order_items\":[\"item_name\":\"Chix Platter\",\"quantity\":1,\"modifiers\":[\"Hot Parm\",\"Cole Slaw\",\"Skinny Fry\"],\"price\":null,\"seat_number\":\"1\",\"item_name\":\"Cole Slaw\",\"quantity\":1,\"modifiers\":[],\"price\":null,\"seat_number\":\"1\"]"
+  },
+  {
+    "file_id": "58",
+    "input": "Extract structured information from this restaurant receipt and return valid JSON.\n\nReceipt Text:\nDa...",
+    "expected": "{\"customer_name\":\"Reeper\",\"date\":\"2025-06-25\",\"time\":\"12:35pm\",\"check_number\":\"424357\",\"table_number\":\"P 1\",\"pickup_time\":\"N/A\",\"total_amount\":null,\"restaurant_name\":null,\"confidence_score\":0.8,\"order_items\":[{\"item_name\":\"Light\",\"quantity\":2,\"modifiers\":[],\"price\":null,\"seat_number\":\"2\"},{\"item_name\":\"Coors Light\",\"quantity\":1,\"modifiers\":[],\"price\":null,\"seat_number\":\"3\"},{\"item_name\":\"Margarita\",\"quantity\":1,\"modifiers\":[\"On Rocks\",\"Salt\",\"V.I.P\"],\"price\":null,\"seat_number\":\"4\"}]}",
+    "predicted": "\"customer_name\":\"Reeper\",\"date\":\"06/03/25\",\"time\":\"12:35pm\",\"check_number\":\"424357\",\"table_number\":\"P 1\",\"pickup_time\":\"N/A\",\"total_amount\":null,\"restaurant_name\":null,\"confidence_score\":0.8,\"order_items\":[\"item_name\":\"Coors Light\",\"quantity\":1,\"modifiers\":[\"3\",\"Coors Light\"],\"price\":null,\"seat_number\":\"2\"]"
+  },
+  {
+    "file_id": "107",
+    "input": "Extract structured information from this restaurant receipt and return valid JSON.\n\nReceipt Text:\nDa...",
+    "expected": "{\"customer_name\":\"Ava\",\"date\":\"03/25\",\"time\":\"01:58pm\",\"check_number\":\"424383\",\"table_number\":\"W-2\",\"pickup_time\":\"N/A\",\"total_amount\":null,\"restaurant_name\":null,\"confidence_score\":0.8,\"order_items\":[{\"item_name\":\"Wing & Fries\",\"quantity\":1,\"modifiers\":[\"Hot\",\"Skinny Fry\"],\"price\":null,\"seat_number\":\"1\"},{\"item_name\":\"Chix\",\"quantity\":1,\"modifiers\":[\"Chix Philly Sa\",\"Italian\",\"Grilled\",\"Skinny Fry\"],\"price\":null,\"seat_number\":\"1\"}]}",
+    "predicted": "\"customer_name\":\"Ava\",\"date\":\"06/03/25\",\"time\":\"01:58pm\",\"check_number\":\"424383\",\"table_number\":\"W-2\",\"pickup_time\":\"N/A\",\"total_amount\":null,\"restaurant_name\":null,\"confidence_score\":0.8,\"order_items\":[\"item_name\":\"Wing & Fries\",\"quantity\":1,\"modifiers\":[\"Hot\",\"Skinny Fry\"],\"price\":null,\"seat_number\":\"1\",\"item_name\":\"Chix\",\"quantity\":1,\"modifiers\":[\"Chix Philly Sa\",\"Italian\",\"Grilled\",\"Skinny Fry\"],\"price\":null,\"seat_number\":\"1\"]"
+  },
+  {
+    "file_id": "117",
+    "input": "Extract structured information from this restaurant receipt and return valid JSON.\n\nReceipt Text:\nDa...",
+    "expected": "{\"customer_name\":\"Chelsi!\",\"date\":\"06/03/25\",\"time\":\"02:24pm\",\"check_number\":\"424391\",\"table_number\":\"\",\"pickup_time\":\"N/A\",\"total_amount\":null,\"restaurant_name\":null,\"confidence_score\":0.8,\"order_items\":[{\"item_name\":\"Coors Light\",\"quantity\":1,\"modifiers\":[\"Draft\"],\"price\":null,\"seat_number\":\"1\"},{\"item_name\":\"CORONA PREMIER\",\"quantity\":1,\"modifiers\":[\"Draft\"],\"price\":null,\"seat_number\":\"2\"}]}",
+    "predicted": "\"customer_name\":\"Chelsi!\",\"date\":\"06/03/25\",\"time\":\"02:24pm\",\"check_number\":\"424391\",\"table_number\":\"\",\"pickup_time\":\"N/A\",\"total_amount\":null,\"restaurant_name\":null,\"confidence_score\":0.8,\"order_items\":[\"item_name\":\"Coors Light\",\"quantity\":1,\"modifiers\":[\"Draft\"],\"price\":null,\"seat_number\":\"1\",\"item_name\":\"CORONA PREMIER\",\"quantity\":1,\"modifiers\":[\"Draft\"],\"price\":null,\"seat_number\":\"2\"]"
+  },
+  {
+    "file_id": "53",
+    "input": "Extract structured information from this restaurant receipt and return valid JSON.\n\nReceipt Text:\nDa...",
+    "expected": "{\"customer_name\":\"Reeper\",\"date\":\"2025-06-25\",\"time\":\"12:24pm\",\"check_number\":\"424357\",\"table_number\":\"P 1\",\"pickup_time\":\"N/A\",\"total_amount\":null,\"restaurant_name\":null,\"confidence_score\":0.8,\"order_items\":[{\"item_name\":\"Coors Light\",\"quantity\":1,\"modifiers\":[],\"price\":null,\"seat_number\":\"1\"}]}",
+    "predicted": "\"customer_name\":\"Reeper\",\"date\":\"06/03/25\",\"time\":\"12:24pm\",\"check_number\":\"424357\",\"table_number\":\"P 1\",\"pickup_time\":\"N/A\",\"total_amount\":null,\"restaurant_name\":null,\"confidence_score\":0.8,\"order_items\":[\"item_name\":\"Coors Light\",\"quantity\":1,\"modifiers\":[],\"price\":null,\"seat_number\":\"1\"]"
+  },
+  {
+    "file_id": "33",
+    "input": "Extract structured information from this restaurant receipt and return valid JSON.\n\nReceipt Text:\nDa...",
+    "expected": "{\"customer_name\":\"Chelsi!\",\"date\":\"06/03/25\",\"time\":\"11:54am\",\"check_number\":\"424333\",\"table_number\":\"\",\"pickup_time\":\"N/A\",\"total_amount\":null,\"restaurant_name\":null,\"confidence_score\":0.8,\"order_items\":[{\"item_name\":\"Iron City Light\",\"quantity\":1,\"modifiers\":[],\"price\":null,\"seat_number\":\"1\"}]}",
+    "predicted": "\"customer_name\":\"Chelsi!\",\"date\":\"06/03/25\",\"time\":\"11:54am\",\"check_number\":\"424333\",\"table_number\":\"\",\"pickup_time\":\"N/A\",\"total_amount\":null,\"restaurant_name\":null,\"confidence_score\":0.8,\"order_items\":[\"item_name\":\"Italian City Light\",\"quantity\":1,\"modifiers\":[],\"price\":null,\"seat_number\":\"1\"]"
+  },
+  {
+    "file_id": "8",
+    "input": "Extract structured information from this restaurant receipt and return valid JSON.\n\nReceipt Text:\nDa...",
+    "expected": "{\"customer_name\":\"Reeper\",\"date\":\"2025-06-25\",\"time\":\"11:28am\",\"check_number\":\"424325\",\"table_number\":\"14\",\"pickup_time\":\"N/A\",\"total_amount\":null,\"restaurant_name\":null,\"confidence_score\":0.8,\"order_items\":[{\"item_name\":\"Buffalo Chix Sa\",\"quantity\":1,\"modifiers\":[\"NO Cheese\",\"Fried\",\"Hot Parm\",\"Ranch\"],\"price\":null,\"seat_number\":\"1\"},{\"item_name\":\"Wings 10\",\"quantity\":1,\"modifiers\":[\"Sweet + Hot\",\"Triple Time\",\"All Flappers\"],\"price\":null,\"seat_number\":\"2\"},{\"item_name\":\"Dino Burger San\",\"quantity\":1,\"modifiers\":[\"Pink\",\"Lettuce\",\"Mayonaise\",\"Tomato\",\"American\",\"Home Fry\"],\"price\":null,\"seat_number\":\"3\"},{\"item_name\":\"Pepsi\",\"quantity\":1,\"modifiers\":[],\"price\":null,\"seat_number\":\"3\"},{\"item_name\":\"Wings 10\",\"quantity\":2,\"modifiers\":[\"Ranch\",\"Triple Time\",\"All Flappers\"],\"price\":null,\"seat_number\":\"4\"},{\"item_name\":\"Iced Tea\",\"quantity\":1,\"modifiers\":[],\"price\":null,\"seat_number\":\"4\"}]}",
+    "predicted": "\"customer_name\":\"Reeper\",\"date\":\"06/03/25\",\"time\":\"11:28am\",\"check_number\":\"424325\",\"table_number\":\"14\",\"pickup_time\":\"N/A\",\"total_amount\":null,\"restaurant_name\":null,\"confidence_score\":0.8,\"order_items\":[\"item_name\":\"Wings\",\"quantity\":1,\"modifiers\":[\"NO Cheese\",\"Fried\",\"Hot Parm\",\"Ranch\"],\"price\":null,\"seat_number\":\"1\",\"item_name\":\"Dino Burger San\",\"quantity\":1,\"modifiers\":[\"Pink\",\"Lettuce\",\"Mayonaise\",\"Tomato\",\"American\",\"Home Fry\"],\"price\":null,\"seat_number\":\"4\",\"item_name\":\"Iced Tea\",\"quantity\":1,\"modifiers\":[],\"price\":null,\"seat_number\":\"5\",\"item_name\":\"Iced Tea\",\"quantity\":1,\"modifiers\":[],\"price\":null,\"seat_number\":\"5\"]"
+  }
+]
