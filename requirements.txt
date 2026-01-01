@@ -1,0 +1,15 @@
+pandas
+pydantic
+torch
+dotenv
+numpy
+typing
+os
+json
+sklearn
+transformers
+dataclasses
+collections
+re
+pathlib
+sqlite3
