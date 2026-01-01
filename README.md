@@ -3,7 +3,7 @@
 The main pipeline involves first using the preprocessing folder to convert the Wireshark data text files into chunks of receipts to be processed. Next we move into the finetuning 
 folder for the two main finetuning approaches. Approach 1 here did not seem very promising, which is why a data-distillation based method to generate ground truth from a larger
 model and use it to train the smaller model was employed in Approach 2. We then have a evaluation and partially implemented post-processing pipeline implemented in the distillation folder. 
-Refer to the individual directory readmes for a detailed outlook on the approaches and the files in them.
+Refer to the individual directory readmes for a detailed outlook on the approaches and the files in them. old_work has work regarding approaches that did not pan out for reference
 
 ## Approach 1 (decode_data.py → separate_data.py → tts_gen.py → main.py) is a streamlined pipeline designed for network packet captures: 
 
